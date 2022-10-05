@@ -167,6 +167,24 @@ address {
   margin-left: 93px;
 }
 
+.nav-inner::after {
+  content: "";
+
+  position: absolute;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 29px;
+
+  background-color: var(--accent);
+  border-radius: 2px;
+}
+
+.nav-link {
+  position: relative;
+}
+
 .nav-menu .nav-link {
   display: block;
   padding: 32px 0;
@@ -229,7 +247,7 @@ address {
   color: var(--white-color);
   text-align: center;
   padding: 200px 0;
-
+  margin: 0;
   background-color: var(--footer-bcg-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -611,6 +629,49 @@ address {
 
 .gallery-icon {
   display: block;
+}
+
+.gallery-thumb {
+  position: relative;
+}
+
+.gallery-thumb::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  z-index: 1;
+
+  opacity: 0;
+}
+
+.gallery-thumb:hover::before,
+.gallery-thumb:focus::before,
+.gallery-text-thumb:hover,
+.gallery-icon:hover {
+  opacity: 1;
+}
+
+.gallery-text-thumb {
+  display: block;
+  position: absolute;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+
+  width: 322px;
+  height: 168px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color);
+  z-index: 2;
+
+  opacity: 0;
 }
 
 .gallery-icon:hover,
