@@ -340,16 +340,14 @@ address {
 /* About-icon */
 
 .about-icon {
-  border-radius: 4px;
-  background-color: var(--secondary-bcg-color);
-  margin-bottom: 30px;
-}
-
-.about-icon-link {
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  border-radius: 4px;
+  background-color: var(--secondary-bcg-color);
+  margin-bottom: 30px;
 }
 
 /* ======================================WORK*/
@@ -444,10 +442,6 @@ address {
   gap: 10px;
 }
 
-/* .team-soc-item {
-  transition: var(--transormcubik);
-} */
-
 .team-soc-link {
   display: flex;
   align-items: center;
@@ -509,7 +503,7 @@ address {
 }
 
 .clients-icon {
-  transition: color 250ms var(--cubik);
+  transition: fill 250ms var(--cubik);
 }
 
 .clients-link:hover .clients-icon,
@@ -539,7 +533,6 @@ address {
 
 .footer-contact,
 .footer-adress {
-  font-weight: 400;
   line-height: 1.71;
 }
 
@@ -652,7 +645,9 @@ address {
   display: block;
   width: calc((100% - 2 * 30px) / 3);
   border: 1px solid #eeeeee;
+}
 
+.gallery-link {
   transition: color 250ms var(--cubik), box-shadow 250ms var(--cubik),
     background-color 250ms var(--cubik);
 }
@@ -700,13 +695,11 @@ address {
 
   transform: translateY(100%);
   transition: transform 250ms var(--cubik);
-  opacity: 0;
 }
 
-.gallery-item:hover .gallery-text-thumb,
-.gallery-item:focus .gallery-text-thumb {
+.gallery-link:hover .gallery-text-thumb,
+.gallery-link:focus .gallery-text-thumb {
   transform: translateY(0);
-  opacity: 1;
 }
 
 .gallery-item:hover,
