@@ -739,7 +739,7 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
-  transition: transform 250ms linear;
+  transition: transform 250ms var(--cubik);
 }
 
 .backdrop.is-hidden .modal {
