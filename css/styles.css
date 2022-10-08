@@ -197,9 +197,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubik);
+  transition: color 250ms var(--cubik);
 }
 
 .nav-link:hover,
@@ -232,9 +230,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubik);
+  transition: color 250ms var(--cubik);
 }
 
 .contact:hover,
@@ -246,9 +242,7 @@ address {
 .nav-icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubik);
+  transition: color 250ms var(--cubik);
 }
 
 .contact:hover .nav-icon,
@@ -311,9 +305,7 @@ address {
   letter-spacing: 0.06em;
   box-shadow: var(--shadow-hero-btn);
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubik);
+  transition: color 250ms var(--cubik);
 }
 
 .hero-btn:hover,
@@ -465,9 +457,7 @@ address {
   border-radius: 50%;
   color: var(--color-icon);
 
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubik);
+  transition: color 250ms var(--cubik), background-color 250ms var(--cubik);
 }
 
 .team-soc-icon {
@@ -510,9 +500,7 @@ address {
   width: 170px;
   height: 92px;
 
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubik);
+  transition: border-color 250ms var(--cubik);
 }
 
 .clients-link:hover,
@@ -521,9 +509,7 @@ address {
 }
 
 .clients-icon {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubik);
+  transition: color 250ms var(--cubik);
 }
 
 .clients-link:hover .clients-icon,
@@ -563,9 +549,7 @@ address {
 
 .footer-contact {
   color: var(--color-white-shadow);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubik);
+  transition: color 250ms var(--cubik);
 }
 
 .footer-contact:hover,
@@ -609,9 +593,7 @@ address {
   border-radius: 50%;
   background-color: var(--shadow-footer);
   fill: var(--white-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubik);
+  transition: background-color 250ms var(--cubik);
 }
 
 .join-link:hover,
@@ -647,9 +629,8 @@ address {
   line-height: 1.62;
   text-align: center;
 
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubik);
+  transition: color 250ms var(--cubik), box-shadow 250ms var(--cubik),
+    background-color 250ms var(--cubik);
 }
 
 .content-btn:hover,
@@ -672,9 +653,8 @@ address {
   width: calc((100% - 2 * 30px) / 3);
   border: 1px solid #eeeeee;
 
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubik);
+  transition: color 250ms var(--cubik), box-shadow 250ms var(--cubik),
+    background-color 250ms var(--cubik);
 }
 
 .gallery-title {
@@ -743,7 +723,7 @@ address {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms var(--cubik), visibility 250ms var(--cubik);
 }
 
 .modal {
