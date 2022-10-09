@@ -121,6 +121,29 @@ address {
   font-style: normal;
 }
 
+/* BUTTON */
+
+.button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+
+  color: var(--white-color);
+  background-color: var(--accent);
+  box-shadow: var(--shadow-hero-btn);
+
+  transition: color 250ms var(--cubik);
+}
+
 /* Header */
 .header {
   border-bottom: 1px solid #ececec;
@@ -286,26 +309,9 @@ address {
 }
 
 .hero-btn {
-  display: flex;
-  align-items: center;
   padding: 10px 32px;
   margin: 0 auto;
-  border-radius: 4px;
   min-width: 216px;
-  border: 0;
-
-  color: var(--white-color);
-  background-color: var(--accent);
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-  letter-spacing: 0.06em;
-  box-shadow: var(--shadow-hero-btn);
-
-  transition: color 250ms var(--cubik);
 }
 
 .hero-btn:hover,
@@ -609,6 +615,12 @@ address {
 
 .content-btn {
   display: inline-block;
+  text-align: center;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
   border-radius: 4px;
   border: 0;
   min-width: 73px;
@@ -616,12 +628,6 @@ address {
 
   color: var(--title-text-color);
   background-color: var(--secondary-bcg-color);
-
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
 
   transition: color 250ms var(--cubik), box-shadow 250ms var(--cubik),
     background-color 250ms var(--cubik);
@@ -649,8 +655,7 @@ address {
 }
 
 .gallery-link {
-  transition: color 250ms var(--cubik), box-shadow 250ms var(--cubik),
-    background-color 250ms var(--cubik);
+  transition: box-shadow 250ms var(--cubik);
 }
 
 .gallery-title {
